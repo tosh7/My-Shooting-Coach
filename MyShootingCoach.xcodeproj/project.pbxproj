@@ -7,33 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B15A2071F791F7F00F2DA27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15A2061F791F7F00F2DA27 /* File.swift */; };
 		2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0061F78B8C50098BACC /* HomeViewController.swift */; };
 		2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0091F78B90D0098BACC /* AreaViewController.swift */; };
 		2B9DD00C1F78B9260098BACC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00B1F78B9260098BACC /* SettingViewController.swift */; };
 		2B9DD00E1F78B9400098BACC /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00D1F78B9400098BACC /* StatsViewController.swift */; };
 		2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00F1F78B9540098BACC /* PostViewController.swift */; };
+		2B9DD0221F7911D10098BACC /* haguruma3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0211F79119F0098BACC /* haguruma3.png */; };
+		2B9DD0261F7912540098BACC /* court.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0241F7912500098BACC /* court.png */; };
+		2B9DD0271F7912580098BACC /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0231F7912500098BACC /* house.png */; };
+		2B9DD0281F79125B0098BACC /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0251F7912500098BACC /* paper.png */; };
 		2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869CC1F76A2D900F403BC /* AppDelegate.swift */; };
-		2BF869CF1F76A2D900F403BC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869CE1F76A2D900F403BC /* FirstViewController.swift */; };
-		2BF869D11F76A2D900F403BC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869D01F76A2D900F403BC /* SecondViewController.swift */; };
 		2BF869D41F76A2D900F403BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D21F76A2D900F403BC /* Main.storyboard */; };
 		2BF869D61F76A2D900F403BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D51F76A2D900F403BC /* Assets.xcassets */; };
 		2BF869D91F76A2D900F403BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D71F76A2D900F403BC /* LaunchScreen.storyboard */; };
+		A883B7B5AF7B30D43B0A1F42 /* Pods_MyShootingCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96AC95420E900B243C248FE /* Pods_MyShootingCoach.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14033C9E5C86AC9A20F6861E /* Pods-MyShootingCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.release.xcconfig"; sourceTree = "<group>"; };
+		1BE13BD90CC6DCB8147BBA50 /* Pods-MyShootingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.debug.xcconfig"; sourceTree = "<group>"; };
+		2B15A2061F791F7F00F2DA27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		2B9DD0061F78B8C50098BACC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B9DD0091F78B90D0098BACC /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		2B9DD00B1F78B9260098BACC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2B9DD00D1F78B9400098BACC /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		2B9DD00F1F78B9540098BACC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		2B9DD0211F79119F0098BACC /* haguruma3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haguruma3.png; sourceTree = "<group>"; };
+		2B9DD0231F7912500098BACC /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		2B9DD0241F7912500098BACC /* court.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = court.png; sourceTree = "<group>"; };
+		2B9DD0251F7912500098BACC /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
 		2BF869C91F76A2D900F403BC /* MyShootingCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShootingCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF869CC1F76A2D900F403BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BF869CE1F76A2D900F403BC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2BF869D01F76A2D900F403BC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2BF869D31F76A2D900F403BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BF869D51F76A2D900F403BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BF869D81F76A2D900F403BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF869DA1F76A2D900F403BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96AC95420E900B243C248FE /* Pods_MyShootingCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyShootingCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A883B7B5AF7B30D43B0A1F42 /* Pods_MyShootingCoach.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B15A2051F791F5600F2DA27 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2B15A2061F791F7F00F2DA27 /* File.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2B9DD0081F78B8CD0098BACC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,11 +78,24 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		2B9DD0111F78FEC30098BACC /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				2B9DD0211F79119F0098BACC /* haguruma3.png */,
+				2B9DD0241F7912500098BACC /* court.png */,
+				2B9DD0231F7912500098BACC /* house.png */,
+				2B9DD0251F7912500098BACC /* paper.png */,
+			);
+			path = pics;
+			sourceTree = "<group>";
+		};
 		2BF869C01F76A2D900F403BC = {
 			isa = PBXGroup;
 			children = (
 				2BF869CB1F76A2D900F403BC /* MyShootingCoach */,
 				2BF869CA1F76A2D900F403BC /* Products */,
+				59FCC6BCFD0606E69B6CB4B7 /* Pods */,
+				75232A5B61E83E18D795C519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,15 +111,32 @@
 			isa = PBXGroup;
 			children = (
 				2BF869CC1F76A2D900F403BC /* AppDelegate.swift */,
-				2BF869CE1F76A2D900F403BC /* FirstViewController.swift */,
-				2BF869D01F76A2D900F403BC /* SecondViewController.swift */,
 				2BF869D21F76A2D900F403BC /* Main.storyboard */,
 				2BF869D51F76A2D900F403BC /* Assets.xcassets */,
 				2BF869D71F76A2D900F403BC /* LaunchScreen.storyboard */,
 				2BF869DA1F76A2D900F403BC /* Info.plist */,
 				2B9DD0081F78B8CD0098BACC /* ViewControllers */,
+				2B15A2051F791F5600F2DA27 /* Classes */,
+				2B9DD0111F78FEC30098BACC /* pics */,
 			);
 			path = MyShootingCoach;
+			sourceTree = "<group>";
+		};
+		59FCC6BCFD0606E69B6CB4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE13BD90CC6DCB8147BBA50 /* Pods-MyShootingCoach.debug.xcconfig */,
+				14033C9E5C86AC9A20F6861E /* Pods-MyShootingCoach.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75232A5B61E83E18D795C519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96AC95420E900B243C248FE /* Pods_MyShootingCoach.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BF869DD1F76A2D900F403BC /* Build configuration list for PBXNativeTarget "MyShootingCoach" */;
 			buildPhases = (
+				555261C69AEDA6484CE5EDFE /* [CP] Check Pods Manifest.lock */,
 				2BF869C51F76A2D900F403BC /* Sources */,
 				2BF869C61F76A2D900F403BC /* Frameworks */,
 				2BF869C71F76A2D900F403BC /* Resources */,
+				E5D899167E165E896A5387D0 /* [CP] Embed Pods Frameworks */,
+				C926B0888461968727B57B83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,11 +203,71 @@
 			files = (
 				2BF869D91F76A2D900F403BC /* LaunchScreen.storyboard in Resources */,
 				2BF869D61F76A2D900F403BC /* Assets.xcassets in Resources */,
+				2B9DD0281F79125B0098BACC /* paper.png in Resources */,
+				2B9DD0221F7911D10098BACC /* haguruma3.png in Resources */,
+				2B9DD0261F7912540098BACC /* court.png in Resources */,
+				2B9DD0271F7912580098BACC /* house.png in Resources */,
 				2BF869D41F76A2D900F403BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		555261C69AEDA6484CE5EDFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyShootingCoach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C926B0888461968727B57B83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D899167E165E896A5387D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BF869C51F76A2D900F403BC /* Sources */ = {
@@ -164,9 +276,8 @@
 			files = (
 				2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */,
 				2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */,
-				2BF869D11F76A2D900F403BC /* SecondViewController.swift in Sources */,
+				2B15A2071F791F7F00F2DA27 /* File.swift in Sources */,
 				2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */,
-				2BF869CF1F76A2D900F403BC /* FirstViewController.swift in Sources */,
 				2B9DD00E1F78B9400098BACC /* StatsViewController.swift in Sources */,
 				2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */,
 				2B9DD00C1F78B9260098BACC /* SettingViewController.swift in Sources */,
@@ -304,6 +415,7 @@
 		};
 		2BF869DE1F76A2D900F403BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE13BD90CC6DCB8147BBA50 /* Pods-MyShootingCoach.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +431,7 @@
 		};
 		2BF869DF1F76A2D900F403BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14033C9E5C86AC9A20F6861E /* Pods-MyShootingCoach.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

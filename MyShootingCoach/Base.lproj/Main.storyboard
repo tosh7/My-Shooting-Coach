@@ -53,14 +53,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="house.png" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="Title" id="TqJ-rt-Xdb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855" y="-1099"/>
         </scene>
-        <!--Second-->
+        <!--Area View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="AreaViewController" customModule="MyShootingCoach" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,7 +104,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="court.png" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +127,7 @@
             </objects>
             <point key="canvasLocation" x="1841" y="-84"/>
         </scene>
-        <!--Item-->
+        <!--Stats View Controller-->
         <scene sceneID="dFE-yG-mIn">
             <objects>
                 <viewController id="oPa-Lr-B6u" customClass="StatsViewController" customModule="MyShootingCoach" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,13 +157,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Qkt-YU-1lS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="first" id="HFy-Qg-pUK"/>
+                    <tabBarItem key="tabBarItem" title="" image="paper.png" id="HFy-Qg-pUK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agn-XX-5ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="853.60000000000002" y="548.27586206896558"/>
         </scene>
-        <!--Item-->
+        <!--Setting View Controller-->
         <scene sceneID="qRp-MG-xfA">
             <objects>
                 <viewController id="Cie-pe-4h1" customClass="SettingViewController" customModule="MyShootingCoach" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,7 +188,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="iGm-ZM-Kea"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="second" id="gub-zl-iUx"/>
+                    <tabBarItem key="tabBarItem" title="" image="haguruma3.png" id="gub-zl-iUx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94T-32-xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,10 +216,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="court.png" width="32" height="32"/>
+        <image name="haguruma3.png" width="32" height="32"/>
+        <image name="house.png" width="32" height="32"/>
+        <image name="paper.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJZ-2t-ysu"/>
+        <segue reference="I2D-0u-5A6"/>
     </inferredMetricsTieBreakers>
 </document>
