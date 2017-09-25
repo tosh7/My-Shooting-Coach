@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0061F78B8C50098BACC /* HomeViewController.swift */; };
+		2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0091F78B90D0098BACC /* AreaViewController.swift */; };
+		2B9DD00C1F78B9260098BACC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00B1F78B9260098BACC /* SettingViewController.swift */; };
+		2B9DD00E1F78B9400098BACC /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00D1F78B9400098BACC /* StatsViewController.swift */; };
+		2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD00F1F78B9540098BACC /* PostViewController.swift */; };
 		2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869CC1F76A2D900F403BC /* AppDelegate.swift */; };
 		2BF869CF1F76A2D900F403BC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869CE1F76A2D900F403BC /* FirstViewController.swift */; };
 		2BF869D11F76A2D900F403BC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869D01F76A2D900F403BC /* SecondViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9DD0061F78B8C50098BACC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B9DD0091F78B90D0098BACC /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		2B9DD00B1F78B9260098BACC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2B9DD00D1F78B9400098BACC /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		2B9DD00F1F78B9540098BACC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2BF869C91F76A2D900F403BC /* MyShootingCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShootingCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF869CC1F76A2D900F403BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BF869CE1F76A2D900F403BC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9DD0081F78B8CD0098BACC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B9DD0061F78B8C50098BACC /* HomeViewController.swift */,
+				2B9DD0091F78B90D0098BACC /* AreaViewController.swift */,
+				2B9DD00B1F78B9260098BACC /* SettingViewController.swift */,
+				2B9DD00D1F78B9400098BACC /* StatsViewController.swift */,
+				2B9DD00F1F78B9540098BACC /* PostViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2BF869C01F76A2D900F403BC = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +85,7 @@
 				2BF869D51F76A2D900F403BC /* Assets.xcassets */,
 				2BF869D71F76A2D900F403BC /* LaunchScreen.storyboard */,
 				2BF869DA1F76A2D900F403BC /* Info.plist */,
+				2B9DD0081F78B8CD0098BACC /* ViewControllers */,
 			);
 			path = MyShootingCoach;
 			sourceTree = "<group>";
@@ -139,9 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */,
+				2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */,
 				2BF869D11F76A2D900F403BC /* SecondViewController.swift in Sources */,
 				2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */,
 				2BF869CF1F76A2D900F403BC /* FirstViewController.swift in Sources */,
+				2B9DD00E1F78B9400098BACC /* StatsViewController.swift in Sources */,
+				2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */,
+				2B9DD00C1F78B9260098BACC /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
