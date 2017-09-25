@@ -1,0 +1,6 @@
+framework module Pods_MyShootingCoach {
+  umbrella header "Pods-MyShootingCoach-umbrella.h"
+
+  export *
+  module * { export * }
+}
