@@ -31,11 +31,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Un-7c-aYf">
-                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Home" id="gjM-9k-cT6">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="BvE-aU-7w2">
+                                        <barButtonItem key="rightBarButtonItem" image="ball.png" id="BvE-aU-7w2">
                                             <connections>
                                                 <segue destination="Pph-aH-PN2" kind="presentation" id="AH6-mg-M1S"/>
                                             </connections>
@@ -82,11 +82,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eew-1e-U9g">
-                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Area" id="Ahb-yh-RNH">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="wfB-g4-s3A">
+                                        <barButtonItem key="rightBarButtonItem" image="ball.png" id="wfB-g4-s3A">
                                             <connections>
                                                 <segue destination="Pph-aH-PN2" kind="presentation" id="I2D-0u-5A6"/>
                                             </connections>
@@ -136,11 +136,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-09-60w">
-                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Stats" id="tnz-S5-JW5">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="AKL-fw-Hi0">
+                                        <barButtonItem key="rightBarButtonItem" image="ball.png" id="AKL-fw-Hi0">
                                             <connections>
                                                 <segue destination="Pph-aH-PN2" kind="presentation" id="Lf8-mh-xK4"/>
                                             </connections>
@@ -172,11 +172,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y1h-VE-HPd">
-                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Setting" id="eGU-Jz-KPt">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="5ve-5J-9nF">
+                                        <barButtonItem key="rightBarButtonItem" image="ball.png" id="5ve-5J-9nF">
                                             <connections>
                                                 <segue destination="Pph-aH-PN2" kind="presentation" id="kJZ-2t-ysu"/>
                                             </connections>
@@ -216,12 +216,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ball.png" width="32" height="32"/>
         <image name="court.png" width="32" height="32"/>
         <image name="haguruma3.png" width="32" height="32"/>
         <image name="house.png" width="32" height="32"/>
         <image name="paper.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="I2D-0u-5A6"/>
+        <segue reference="AH6-mg-M1S"/>
     </inferredMetricsTieBreakers>
 </document>
