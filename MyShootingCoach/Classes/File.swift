@@ -16,3 +16,5 @@ class ShootData: Object{
     @objc dynamic var make: Int = 0
     
 }
+
+
