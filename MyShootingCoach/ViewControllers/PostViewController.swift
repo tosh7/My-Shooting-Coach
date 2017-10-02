@@ -28,17 +28,19 @@ class PostViewController: UIViewController {
         let data_make = Double(make.text!)!
         let data_take = Double(take.text!)!
         
-        po.percent = data_make / data_take
+        po.percent = data_make / data_take * 100
         
         print("data_make is ", data_make)
         print("data_take is ", data_take)
         print("po.percent is ", po.percent)
         
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
         let realm = try! Realm()
         try! realm.write{
             realm.add(po)
         }
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
         
         self.dismiss(animated: true, completion: nil)
     }
