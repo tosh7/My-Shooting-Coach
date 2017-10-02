@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B15A2071F791F7F00F2DA27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15A2061F791F7F00F2DA27 /* File.swift */; };
+		2B15A2071F791F7F00F2DA27 /* ShootData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15A2061F791F7F00F2DA27 /* ShootData.swift */; };
 		2B4745E31F80A49D00D73F00 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4745E21F80A49800D73F00 /* ball.png */; };
 		2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0061F78B8C50098BACC /* HomeViewController.swift */; };
 		2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9DD0091F78B90D0098BACC /* AreaViewController.swift */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		14033C9E5C86AC9A20F6861E /* Pods-MyShootingCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.release.xcconfig"; sourceTree = "<group>"; };
 		1BE13BD90CC6DCB8147BBA50 /* Pods-MyShootingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.debug.xcconfig"; sourceTree = "<group>"; };
-		2B15A2061F791F7F00F2DA27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2B15A2061F791F7F00F2DA27 /* ShootData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootData.swift; sourceTree = "<group>"; };
 		2B4745E21F80A49800D73F00 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		2B9DD0061F78B8C50098BACC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B9DD0091F78B90D0098BACC /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		2B15A2051F791F5600F2DA27 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2B15A2061F791F7F00F2DA27 /* File.swift */,
+				2B15A2061F791F7F00F2DA27 /* ShootData.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 			files = (
 				2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */,
 				2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */,
-				2B15A2071F791F7F00F2DA27 /* File.swift in Sources */,
+				2B15A2071F791F7F00F2DA27 /* ShootData.swift in Sources */,
 				2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */,
 				2B9DD00E1F78B9400098BACC /* StatsViewController.swift in Sources */,
 				2B9DD0071F78B8C50098BACC /* HomeViewController.swift in Sources */,
