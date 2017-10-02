@@ -16,17 +16,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var make: UITextField!
     @IBOutlet weak var take: UITextField!
     
-    var data_make: Double!
-    var data_take: Double!
-    
     let po = ShootData()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print("here")
-        
-    }
     
     @IBAction func Post(_ sender: Any) {
         
@@ -35,8 +25,8 @@ class PostViewController: UIViewController {
         po.take = Int(make.text!)!
         po.make = Int(take.text!)!
         
-        data_make = Double(make.text!)!
-        data_take = Double(take.text!)!
+        let data_make = Double(make.text!)!
+        let data_take = Double(take.text!)!
         
         po.percent = data_make / data_take
         
@@ -49,7 +39,6 @@ class PostViewController: UIViewController {
             realm.add(po)
         }
         print(Realm.Configuration.defaultConfiguration.fileURL!)
-        
         
         self.dismiss(animated: true, completion: nil)
     }
