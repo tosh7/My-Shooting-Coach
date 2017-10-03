@@ -11,28 +11,23 @@ import RealmSwift
 
 class PostViewController: UIViewController {
     
-    @IBOutlet weak var month: UITextField!
-    @IBOutlet weak var day: UITextField!
-    @IBOutlet weak var make: UITextField!
-    @IBOutlet weak var take: UITextField!
+    @IBOutlet weak var monthTextField: UITextField!
+    @IBOutlet weak var dayTextField: UITextField!
+    @IBOutlet weak var makeTextField: UITextField!
+    @IBOutlet weak var takeTextField: UITextField!
     
     let po = ShootData()
     
     @IBAction func Post(_ sender: Any) {
         
-        po.month = Int(month.text!)!
-        po.day = Int(day.text!)!
-        po.take = Int(make.text!)!
-        po.make = Int(take.text!)!
+        let dataMake = Double(makeTextField.text!)!
+        let dataTake = Double(takeTextField.text!)!
         
-        let data_make = Double(make.text!)!
-        let data_take = Double(take.text!)!
-        
-        po.percent = data_make / data_take * 100
-        
-        print("data_make is ", data_make)
-        print("data_take is ", data_take)
-        print("po.percent is ", po.percent)
+        po.month = Int(monthTextField.text!)!
+        po.day = Int(dayTextField.text!)!
+        po.make = Int(makeTextField.text!)!
+        po.take = Int(takeTextField.text!)!
+        po.percent = dataMake / dataTake * 100
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
@@ -41,8 +36,19 @@ class PostViewController: UIViewController {
             realm.add(po)
         }
         
+        let alert: UIAlertController = UIAlertController(title: "保存",
+                                                         message: "データの入力が完了しました",
+                                                         preferredStyle: .alert)
         
-        self.dismiss(animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,
+                                      handler: { action in
+                                        print("OKボタンが押されました")
+                                        self.dismiss(animated: true, completion: nil)
+                                    }
+                        )
+        )
+        
+        present(alert, animated: true, completion: nil)
     }
     
 }
