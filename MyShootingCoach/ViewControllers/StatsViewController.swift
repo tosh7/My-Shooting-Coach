@@ -15,6 +15,7 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     
     let realm = try! Realm()
     var shootDataArray: Results<ShootData>!
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -25,8 +26,19 @@ class StatsViewController: UIViewController, UITableViewDataSource {
         print(shootDataArray[0])
         print(shootDataArray.count)
         
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "引っ張って更新")
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        table.addSubview(refreshControl)
         
     }
+    
+    @objc func refresh(){
+        shootDataArray = realm.objects(ShootData.self)
+        super.viewDidLoad()
+        refreshControl?.endRefreshing()
+    }
+    
     
     //セルの数を設定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -36,8 +48,6 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     //セルの中身を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        
-        
         
         cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%"
         
