@@ -17,7 +17,8 @@ class HomeViewController: UIViewController {
     let realm = try! Realm()
     var min:Int = 1232
     var max:Int = 100
-    
+    var totalMake:Int = 0
+    var totalTake:Int = 0
     var shootDataArray: Results<ShootData>!
     
     override func viewDidLoad() {
@@ -29,13 +30,11 @@ class HomeViewController: UIViewController {
         
         startDay.text  = "\(min / 100)/\(min % 100)"
         endDay.text  = "\(max / 100)/\(max % 100)"
+        shootPercent.text = "\(totalMake * 100 / totalTake)"
         
     }
     
     func calcu(){
-        
-        
-//        var i: Int?
         
         for i in 0...shootDataArray.count - 1{
             print("iは\(i)である")
@@ -47,6 +46,9 @@ class HomeViewController: UIViewController {
             if max <= monthDate{
                 max = monthDate
             }
+            
+            totalMake = totalMake + shootDataArray[i].make
+            totalTake = totalTake + shootDataArray[i].take
             
         }
         
