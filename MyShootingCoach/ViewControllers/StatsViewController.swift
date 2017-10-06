@@ -34,8 +34,10 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     }
     
     @objc func refresh(){
+        print(refresh)
+        koushin()
+        table.dataSource = self
         shootDataArray = realm.objects(ShootData.self)
-        super.viewDidLoad()
         refreshControl?.endRefreshing()
     }
     
@@ -53,5 +55,13 @@ class StatsViewController: UIViewController, UITableViewDataSource {
         
         return cell!
     }
+    
+    func koushin(){
+        print(1)
+        table.dataSource = self
+//        shootDataArray = realm.objects(ShootData.self)
+        shootDataArray = realm.objects(ShootData.self)
+    }
+    
     
 }
