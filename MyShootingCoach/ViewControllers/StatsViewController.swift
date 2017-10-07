@@ -24,8 +24,6 @@ class StatsViewController: UIViewController, UITableViewDataSource {
         table.dataSource = self
         
         shootDataArray = realm.objects(ShootData.self)
-        print(shootDataArray[0])
-        print(shootDataArray.count)
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "引っ張って更新")

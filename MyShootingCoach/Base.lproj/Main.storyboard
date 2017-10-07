@@ -179,8 +179,8 @@
                         <outlet property="paintArea" destination="DIq-45-dmP" id="N0a-PK-mTE"/>
                         <outlet property="right" destination="wDV-b4-Nj8" id="8WP-7J-4ka"/>
                         <outlet property="threeCenter" destination="A6A-X8-pyS" id="kfp-pP-eFi"/>
-                        <outlet property="threeLeftCorner" destination="n5S-PW-4tc" id="lzr-EO-9Nb"/>
-                        <outlet property="threeLeftWing" destination="7ns-WI-MI1" id="jWI-1e-Z7I"/>
+                        <outlet property="threeLeftCorner" destination="n5S-PW-4tc" id="4JV-nB-Ehw"/>
+                        <outlet property="threeLeftWing" destination="7ns-WI-MI1" id="mXd-m2-x1V"/>
                         <outlet property="threeRightCorner" destination="o7T-M9-t8b" id="CnE-ye-vNk"/>
                         <outlet property="threeRightWing" destination="QcY-2Z-jjt" id="yOD-BC-mjD"/>
                     </connections>
@@ -560,6 +560,6 @@
         <image name="paper.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJZ-2t-ysu"/>
+        <segue reference="I2D-0u-5A6"/>
     </inferredMetricsTieBreakers>
 </document>
