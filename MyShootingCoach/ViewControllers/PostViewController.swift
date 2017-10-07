@@ -42,11 +42,11 @@ class PostViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,
                                       handler: { action in
-                                        print("OKボタンが押されました")
-                                        self.dismiss(animated: true, completion: nil)
-                                    }
+                                                print("OKボタンが押されました")
+                                                self.dismiss(animated: true, completion: nil)
+                                                }
+                                        )
                         )
-        )
         
         present(alert, animated: true, completion: nil)
     }

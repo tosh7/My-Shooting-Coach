@@ -10,8 +10,20 @@ import UIKit
 
 class AreaViewController: UIViewController {
     
+    @IBOutlet weak var threeLeftCorner: UILabel!
+    @IBOutlet weak var threeLeftWing: UIImageView!
+    @IBOutlet weak var threeCenter: UILabel!
+    @IBOutlet weak var threeRightWing: UILabel!
+    @IBOutlet weak var threeRightCorner: UILabel!
+    @IBOutlet weak var left: UILabel!
+    @IBOutlet weak var middle: UILabel!
+    @IBOutlet weak var right: UILabel!
+    @IBOutlet weak var paintArea: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
     }
 

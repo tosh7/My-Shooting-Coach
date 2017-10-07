@@ -59,7 +59,6 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     func koushin(){
         print(1)
         table.dataSource = self
-//        shootDataArray = realm.objects(ShootData.self)
         shootDataArray = realm.objects(ShootData.self)
     }
     

@@ -19,6 +19,7 @@
 		2B9DD0261F7912540098BACC /* court.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0241F7912500098BACC /* court.png */; };
 		2B9DD0271F7912580098BACC /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0231F7912500098BACC /* house.png */; };
 		2B9DD0281F79125B0098BACC /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9DD0251F7912500098BACC /* paper.png */; };
+		2B9E58541F88C68B0015E8D9 /* MainCourt2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1F4ABF1F88C1E5004EDB3E /* MainCourt2.png */; };
 		2BF869CD1F76A2D900F403BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF869CC1F76A2D900F403BC /* AppDelegate.swift */; };
 		2BF869D41F76A2D900F403BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D21F76A2D900F403BC /* Main.storyboard */; };
 		2BF869D61F76A2D900F403BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D51F76A2D900F403BC /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		14033C9E5C86AC9A20F6861E /* Pods-MyShootingCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.release.xcconfig"; sourceTree = "<group>"; };
 		1BE13BD90CC6DCB8147BBA50 /* Pods-MyShootingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyShootingCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyShootingCoach/Pods-MyShootingCoach.debug.xcconfig"; sourceTree = "<group>"; };
 		2B15A2061F791F7F00F2DA27 /* ShootData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootData.swift; sourceTree = "<group>"; };
+		2B1F4ABF1F88C1E5004EDB3E /* MainCourt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainCourt2.png; sourceTree = "<group>"; };
 		2B2D1C081F837AA700F387F0 /* MainCourt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainCourt.png; sourceTree = "<group>"; };
 		2B4745E21F80A49800D73F00 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		2B9DD0061F78B8C50098BACC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		2B9DD0111F78FEC30098BACC /* pics */ = {
 			isa = PBXGroup;
 			children = (
+				2B1F4ABF1F88C1E5004EDB3E /* MainCourt2.png */,
 				2B4745E21F80A49800D73F00 /* ball.png */,
 				2B9DD0211F79119F0098BACC /* haguruma3.png */,
 				2B2D1C081F837AA700F387F0 /* MainCourt.png */,
@@ -216,6 +219,7 @@
 				2B4745E31F80A49D00D73F00 /* ball.png in Resources */,
 				2B2D1C091F837AAC00F387F0 /* MainCourt.png in Resources */,
 				2BF869D41F76A2D900F403BC /* Main.storyboard in Resources */,
+				2B9E58541F88C68B0015E8D9 /* MainCourt2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
