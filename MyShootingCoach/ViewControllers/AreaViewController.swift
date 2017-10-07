@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AreaViewController: UIViewController {
     
     @IBOutlet weak var threeLeftCorner: UILabel!
-    @IBOutlet weak var threeLeftWing: UIImageView!
+    @IBOutlet weak var threeLeftWing: UILabel!
     @IBOutlet weak var threeCenter: UILabel!
     @IBOutlet weak var threeRightWing: UILabel!
     @IBOutlet weak var threeRightCorner: UILabel!
@@ -19,6 +20,8 @@ class AreaViewController: UIViewController {
     @IBOutlet weak var middle: UILabel!
     @IBOutlet weak var right: UILabel!
     @IBOutlet weak var paintArea: UILabel!
+    
+    
     
     
     override func viewDidLoad() {

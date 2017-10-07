@@ -16,6 +16,7 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     let realm = try! Realm()
     var shootDataArray: Results<ShootData>!
     var refreshControl: UIRefreshControl!
+//    var numberArray: [Double]!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -51,7 +52,11 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%"
+//        numberArray[indexPath.row] = Double(Int(shootDataArray[indexPath.row].percent * 100) / 100)
+        
+        if shootDataArray[indexPath.row].area != "Z"{
+            cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%   Area:\(shootDataArray[indexPath.row].area)"
+        }
         
         return cell!
     }

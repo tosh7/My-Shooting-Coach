@@ -16,6 +16,16 @@ class PostViewController: UIViewController {
     @IBOutlet weak var makeTextField: UITextField!
     @IBOutlet weak var takeTextField: UITextField!
     
+    @IBOutlet weak var aButtonText: UIButton!
+    @IBOutlet weak var bButtonText: UIButton!
+    @IBOutlet weak var cButtonText: UIButton!
+    @IBOutlet weak var dButtonText: UIButton!
+    @IBOutlet weak var eButtonText: UIButton!
+    @IBOutlet weak var fButtonText: UIButton!
+    @IBOutlet weak var gButtonText: UIButton!
+    @IBOutlet weak var hButtonText: UIButton!
+    @IBOutlet weak var iButtonText: UIButton!
+    
     let po = ShootData()
     
     @IBAction func Post(_ sender: Any) {
@@ -51,4 +61,48 @@ class PostViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func aButton(){
+        aButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "A"
+    }
+    
+    @IBAction func bButton(){
+        bButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "B"
+    }
+    
+    @IBAction func cButton(_ sender: Any) {
+        cButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "C"
+    }
+    
+    @IBAction func dButton(){
+        dButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "D"
+    }
+    
+    @IBAction func eButton(){
+        eButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "E"
+    }
+    
+    @IBAction func fButton(){
+        fButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "F"
+    }
+    
+    @IBAction func gButton(){
+        gButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "G"
+    }
+    
+    @IBAction func hButton(){
+        hButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "H"
+    }
+    
+    @IBAction func iButton(){
+        iButtonText.setTitleColor(UIColor.red, for: .normal)
+        po.area = "I"
+    }
 }

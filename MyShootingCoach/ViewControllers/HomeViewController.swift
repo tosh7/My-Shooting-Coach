@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController{
     
     @IBOutlet weak var startDay: UILabel!
     @IBOutlet weak var endDay: UILabel!
@@ -21,8 +21,30 @@ class HomeViewController: UIViewController {
     var totalTake:Int = 0
     var shootDataArray: Results<ShootData>!
     
+    let po = ShootData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        po.month = 1
+        po.day = 0
+        po.make = 0
+        po.take = 0
+        po.percent = 0
+        po.area = "Z"
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        let realm = try! Realm()
+        try! realm.write{
+            realm.add(po)
+        }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         
         shootDataArray = realm.objects(ShootData.self)
         
@@ -30,7 +52,11 @@ class HomeViewController: UIViewController {
         
         startDay.text  = "\(min / 100)/\(min % 100)"
         endDay.text  = "\(max / 100)/\(max % 100)"
-        shootPercent.text = "\(totalMake * 100 / totalTake)"
+        if totalTake != 0{
+            shootPercent.text = "\(totalMake * 100 / totalTake)"
+        } else {
+            shootPercent.text = "0"
+        }
         
     }
     
@@ -40,9 +66,12 @@ class HomeViewController: UIViewController {
             print("iは\(i)である")
             let monthDate:Int = shootDataArray[i].month * 100 + shootDataArray[i].day
             
-            if min >= monthDate{
+            
+            
+            if min >= monthDate && monthDate != 100{
                 min = monthDate
             }
+            
             if max <= monthDate{
                 max = monthDate
             }
