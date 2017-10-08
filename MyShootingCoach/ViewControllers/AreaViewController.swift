@@ -206,11 +206,11 @@ class AreaViewController: UIViewController {
     }
     
     func greenPaint(tag: UILabel){
-        tag.textColor = UIColor.green
+        tag.textColor = UIColor.brown
     }
     
     func orangePaint(tag: UILabel){
-        tag.textColor = UIColor.orange
+        tag.textColor = UIColor.magenta
     }
     
     func redPaint(tag: UILabel){
