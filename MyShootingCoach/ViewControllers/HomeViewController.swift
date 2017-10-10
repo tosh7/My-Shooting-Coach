@@ -45,6 +45,7 @@ class HomeViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+//        let realm = try! Realm()
         
         shootDataArray = realm.objects(ShootData.self)
         
