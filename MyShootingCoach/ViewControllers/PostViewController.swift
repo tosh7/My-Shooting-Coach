@@ -15,6 +15,8 @@ class PostViewController: UIViewController {
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var makeTextField: UITextField!
     @IBOutlet weak var takeTextField: UITextField!
+    @IBOutlet weak var dayMonthDatePicker: UIDatePicker!
+    @IBOutlet weak var test: UILabel!
     
     @IBOutlet weak var aButtonText: UIButton!
     @IBOutlet weak var bButtonText: UIButton!
@@ -27,6 +29,11 @@ class PostViewController: UIViewController {
     @IBOutlet weak var iButtonText: UIButton!
     
     let po = ShootData()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
     @IBAction func Post(_ sender: Any) {
         
