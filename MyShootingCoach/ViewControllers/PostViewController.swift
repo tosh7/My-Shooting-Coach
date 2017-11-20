@@ -15,7 +15,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var makeTextField: UITextField!
     @IBOutlet weak var takeTextField: UITextField!
-    @IBOutlet weak var dayMonthDatePicker: UIDatePicker!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var test: UILabel!
     
     @IBOutlet weak var aButtonText: UIButton!
@@ -45,6 +45,12 @@ class PostViewController: UIViewController {
         po.make = Int(makeTextField.text!)!
         po.take = Int(takeTextField.text!)!
         po.percent = dataMake / dataTake * 100
+        let date = datePicker.date
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        let dateText = formatter.string(from: date)
+        test.text = dateText
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         

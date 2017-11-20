@@ -403,7 +403,7 @@
                         <outlet property="bButtonText" destination="oxj-Ph-qCX" id="A8E-Cv-ctF"/>
                         <outlet property="cButtonText" destination="8Ph-sF-h8W" id="KMx-8o-atW"/>
                         <outlet property="dButtonText" destination="dF3-qS-2nj" id="AiS-4U-ejy"/>
-                        <outlet property="dayMonthDatePicker" destination="J99-cV-kUD" id="Rrs-Cd-tEJ"/>
+                        <outlet property="datePicker" destination="J99-cV-kUD" id="WTp-zf-XQR"/>
                         <outlet property="dayTextField" destination="gde-K7-JEm" id="8Ul-8d-RhT"/>
                         <outlet property="eButtonText" destination="SHa-k6-xrh" id="Guk-9v-V6y"/>
                         <outlet property="fButtonText" destination="Krq-2d-1Kp" id="BQd-8A-77O"/>
