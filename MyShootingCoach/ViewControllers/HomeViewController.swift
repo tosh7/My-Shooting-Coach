@@ -25,31 +25,35 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        po.month = 1
-        po.day = 0
-        po.make = 0
-        po.take = 0
-        po.percent = 0
-        po.area = "Z"
-        
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
-        let realm = try! Realm()
-        try! realm.write{
-            realm.add(po)
-        }
+        /*po.month = 1
+         po.day = 0
+         po.make = 0
+         po.take = 0
+         po.percent = 0
+         po.area = "Z"
+         
+         print(Realm.Configuration.defaultConfiguration.fileURL!)
+         
+         let realm = try! Realm()
+         try! realm.write{
+         realm.add(po)
+         }*/
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        let realm = try! Realm()
+        //        let realm = try! Realm()
         
         shootDataArray = realm.objects(ShootData.self)
         
-        calcu()
+        if shootDataArray.count != 0{
+            calcu()
+        }
+        
         
         startDay.text  = "\(min / 100)/\(min % 100)"
         endDay.text  = "\(max / 100)/\(max % 100)"
@@ -83,5 +87,5 @@ class HomeViewController: UIViewController{
         }
         
     }
-
+    
 }
