@@ -22,56 +22,34 @@ class HomeViewController: UIViewController{
     var shootDataArray: Results<ShootData>!
     
     let po = ShootData()
+    //    var realm: Realm!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
-        
-        /*po.month = 1
-         po.day = 0
-         po.make = 0
-         po.take = 0
-         po.percent = 0
-         po.area = "Z"
-         
-         print(Realm.Configuration.defaultConfiguration.fileURL!)
-         
-         let realm = try! Realm()
-         try! realm.write{
-         realm.add(po)
-         }*/
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //        let realm = try! Realm()
-        
         shootDataArray = realm.objects(ShootData.self)
         
         if shootDataArray.count != 0{
             calcu()
-        }
-        
-        
-        startDay.text  = "\(min / 100)/\(min % 100)"
-        endDay.text  = "\(max / 100)/\(max % 100)"
-        if totalTake != 0{
+            
+            
+            startDay.text  = "\(min / 100)/\(min % 100)"
+            endDay.text  = "\(max / 100)/\(max % 100)"
+            
+            
             shootPercent.text = "\(totalMake * 100 / totalTake)"
-        } else {
+            
+        }else {
+            startDay.text = "1/1"
+            endDay.text = "1/1"
             shootPercent.text = "0"
         }
-        
     }
     
     func calcu(){
         
         for i in 0...shootDataArray.count - 1{
-            print("iは\(i)である")
             let monthDate:Int = shootDataArray[i].month * 100 + shootDataArray[i].day
-            
-            
             
             if min >= monthDate && monthDate != 100{
                 min = monthDate
@@ -83,9 +61,6 @@ class HomeViewController: UIViewController{
             
             totalMake = totalMake + shootDataArray[i].make
             totalTake = totalTake + shootDataArray[i].take
-            
         }
-        
     }
-    
 }
