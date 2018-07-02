@@ -48,9 +48,9 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        if shootDataArray[indexPath.row].area != "Z"{
-            cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%   Area:\(shootDataArray[indexPath.row].area)"
-        }
+//        if shootDataArray[indexPath.row].area != "Z"{
+//            cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%   Area:\(shootDataArray[indexPath.row].area)"
+//        }
         
         return cell!
     }
