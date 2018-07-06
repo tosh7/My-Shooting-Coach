@@ -22,6 +22,7 @@ class DatePickerTestViewController: UIViewController {
     }
     
     @IBAction func hyouzi(_ sender: Any) {
-        dateLabel.text = String(from: Date(hiduke))
+//        dateLabel.text = String(from: Date(hiduke))
+        print(hiduke);
     }
 }
