@@ -27,6 +27,7 @@
 		2BF869D41F76A2D900F403BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D21F76A2D900F403BC /* Main.storyboard */; };
 		2BF869D61F76A2D900F403BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D51F76A2D900F403BC /* Assets.xcassets */; };
 		2BF869D91F76A2D900F403BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF869D71F76A2D900F403BC /* LaunchScreen.storyboard */; };
+		2BFD6B0B20E9F83400F9CD1E /* DatePickerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD6B0A20E9F83400F9CD1E /* DatePickerTestViewController.swift */; };
 		A883B7B5AF7B30D43B0A1F42 /* Pods_MyShootingCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96AC95420E900B243C248FE /* Pods_MyShootingCoach.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		2BF869D51F76A2D900F403BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BF869D81F76A2D900F403BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF869DA1F76A2D900F403BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFD6B0A20E9F83400F9CD1E /* DatePickerTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTestViewController.swift; sourceTree = "<group>"; };
 		E96AC95420E900B243C248FE /* Pods_MyShootingCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyShootingCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				2B9DD00B1F78B9260098BACC /* SettingViewController.swift */,
 				2B9DD00D1F78B9400098BACC /* StatsViewController.swift */,
 				2B9DD00F1F78B9540098BACC /* PostViewController.swift */,
+				2BFD6B0A20E9F83400F9CD1E /* DatePickerTestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFD6B0B20E9F83400F9CD1E /* DatePickerTestViewController.swift in Sources */,
 				2B9DD0101F78B9540098BACC /* PostViewController.swift in Sources */,
 				2B9DD00A1F78B90D0098BACC /* AreaViewController.swift in Sources */,
 				2B15A2071F791F7F00F2DA27 /* ShootData.swift in Sources */,

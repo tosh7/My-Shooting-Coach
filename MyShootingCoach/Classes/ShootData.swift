@@ -11,11 +11,10 @@ import RealmSwift
 
 class ShootData: Object{
     
-    @objc dynamic var month: Int = 0
-    @objc dynamic var day: Int = 0
-    @objc dynamic var take: Int = 0
-    @objc dynamic var make: Int = 0
-    @objc dynamic var percent: Double = 0
-    @objc dynamic var area: String!
+    @objc dynamic var practiceDay = Date()
+    @objc dynamic var take = 0
+    @objc dynamic var make = 0
+    @objc dynamic var percent: Double = 0.0
+    @objc dynamic var area = ""
     
 }

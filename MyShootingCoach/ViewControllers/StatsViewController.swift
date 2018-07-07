@@ -15,6 +15,7 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     let realm = try! Realm()
     var shootDataArray: Results<ShootData>!
     var refreshControl: UIRefreshControl!
+    let dateFormatter = DateFormatter()
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -22,6 +23,9 @@ class StatsViewController: UIViewController, UITableViewDataSource {
         table.dataSource = self
         
         shootDataArray = realm.objects(ShootData.self)
+        
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+    dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd")
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "引っ張って更新")
@@ -47,9 +51,10 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     //セルの中身を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        let box = dateFormatter.string(from: shootDataArray[indexPath.row].practiceDay)
         
         if shootDataArray[indexPath.row].area != "Z"{
-            cell?.textLabel?.text = "\(shootDataArray[indexPath.row].month)/\(shootDataArray[indexPath.row].day)    \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%   Area:\(shootDataArray[indexPath.row].area)"
+            cell?.textLabel?.text = box + "     \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   \(shootDataArray[indexPath.row].percent)%   Area:\(shootDataArray[indexPath.row].area)"
         }
         
         return cell!
