@@ -37,20 +37,12 @@ class PostViewController: UIViewController {
         
         let dataMake = Double(makeTextField.text!)!
         let dataTake = Double(takeTextField.text!)!
+        let date = datePicker.date
         
-//        po.month = Int(monthTextField.text!)!
-//        po.day = Int(dayTextField.text!)!
+        po.practiceDay = date;
         po.make = Int(makeTextField.text!)!
         po.take = Int(takeTextField.text!)!
         po.percent = dataMake / dataTake * 100
-        let date = datePicker.date
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        let dateText = formatter.string(from: date)
-        
-        
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         let realm = try! Realm()
         try! realm.write{
