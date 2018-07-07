@@ -25,9 +25,6 @@ class DatePickerTestViewController: UIViewController {
     
     @IBAction func hyouzi(_ sender: Any) {
         hiduke = datePicker.date
-        //        dateLabel.text = String(from: Date(hiduke))
-        //        hiduke.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "ja_JP"))
-        //        dateFormatter.locale = Locale(identifier: "ja_JP")
         
         dateLabel.text = dateFormatter.string(from: hiduke)
         print(dateFormatter.string(from: hiduke))
