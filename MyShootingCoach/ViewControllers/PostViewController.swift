@@ -45,23 +45,40 @@ class PostViewController: UIViewController {
         po.percent = dataMake / dataTake * 100
         
         let realm = try! Realm()
-        try! realm.write{
-            realm.add(po)
+        if (po.make > po.take){
+            let lieAlert = UIAlertView()
+            lieAlert.title = "警告"
+            lieAlert.message = "成功数が試投数を超えています"
+            lieAlert.addButton(withTitle: "OK")
+            lieAlert.show()
+        } else if(po.make != 0 && po.take != 0 && po.area != nil) {
+            
+            try! realm.write{
+                realm.add(po)
+            }
+            
+            let alert: UIAlertController = UIAlertController(title: "保存",
+                                                             message: "データの入力が完了しました",
+                                                             preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,
+                                          handler: { action in
+                                            print("OKボタンが押されました")
+                                            self.dismiss(animated: true, completion: nil)
+            }
+                )
+            )
+            
+            present(alert, animated: true, completion: nil)
+        } else {
+            let nilAlert = UIAlertView()
+            nilAlert.title = "警告"
+            nilAlert.message = "空白があります"
+            nilAlert.addButton(withTitle: "OK")
+            nilAlert.show()
         }
         
-        let alert: UIAlertController = UIAlertController(title: "保存",
-                                                         message: "データの入力が完了しました",
-                                                         preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,
-                                      handler: { action in
-                                                print("OKボタンが押されました")
-                                                self.dismiss(animated: true, completion: nil)
-                                                }
-                                        )
-                        )
-        
-        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func aButton(){

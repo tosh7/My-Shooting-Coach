@@ -15,6 +15,6 @@ class ShootData: Object{
     @objc dynamic var take = 0
     @objc dynamic var make = 0
     @objc dynamic var percent: Double = 0.0
-    @objc dynamic var area = ""
+    @objc dynamic var area: String? = nil
     
 }
