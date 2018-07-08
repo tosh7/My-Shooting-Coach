@@ -52,11 +52,11 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         let box = dateFormatter.string(from: shootDataArray[indexPath.row].practiceDay)
-        let percent = String(format: "%2f", shootDataArray[indexPath.row].percent)
+        let percent = String(format: "%.2f", shootDataArray[indexPath.row].percent)
         print(percent)
         
         if shootDataArray[indexPath.row].area != "Z"{
-            cell?.textLabel?.text = box + "     \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take) " + percent +   "Area:\(shootDataArray[indexPath.row].area)"
+            cell?.textLabel?.text = box + "     \(shootDataArray[indexPath.row].make)/\(shootDataArray[indexPath.row].take)   " + percent + "%  Area:\(shootDataArray[indexPath.row].area!)"
         }
         
         return cell!
