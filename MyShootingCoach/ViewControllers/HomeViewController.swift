@@ -29,12 +29,7 @@ class HomeViewController: UIViewController{
         if shootDataArray.count != 0{
             print(shootDataArray[0].practiceDay)
             calcu()
-
-
-//            startDay.text  = "\(min / 100)/\(min % 100)"
-//            endDay.text  = "\(max / 100)/\(max % 100)"
-
-
+            
             shootPercent.text = "\(totalMake * 100 / totalTake)"
 
         }else {
