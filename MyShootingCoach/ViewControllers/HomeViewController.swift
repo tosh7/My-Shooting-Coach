@@ -18,7 +18,7 @@ class HomeViewController: UIViewController{
     var totalMake:Int = 0
     var totalTake:Int = 0
     var shootDataArray: Results<ShootData>!
-    let po = ShootData()
+//    let po = ShootData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,16 @@ class HomeViewController: UIViewController{
         print(folderPath)
         shootDataArray = realm.objects(ShootData.self)
         
+        
+        
         if shootDataArray.count != 0{
-            print(shootDataArray[0].practiceDay)
-            calcu()
-            
-            shootPercent.text = "\(totalMake * 100 / totalTake)"
+//            print(shootDataArray[0].practiceDay)
+//            calcu()
+            let po = shootDataArray.sorted(byKeyPath: "practiceDay")
+            for i in 0...po.count - 1 {
+                print(po[i].practiceDay)
+            }
+//            shootPercent.text = "\(totalMake * 100 / totalTake)"
 
         }else {
             startDay.text = "1/1"
