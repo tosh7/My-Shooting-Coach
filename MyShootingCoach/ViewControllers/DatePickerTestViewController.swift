@@ -13,7 +13,6 @@ class DatePickerTestViewController: UIViewController {
     @IBOutlet var datePicker: UIDatePicker!
     var hiduke: Date!
     @IBOutlet weak var dateLabel: UILabel!
-    //    var dataFormat = NSDateFormat()
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {

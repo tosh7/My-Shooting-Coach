@@ -18,25 +18,18 @@ class HomeViewController: UIViewController{
     var totalMake:Int = 0
     var totalTake:Int = 0
     var shootDataArray: Results<ShootData>!
-//    let po = ShootData()
+    let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let folderPath = realm.configuration.fileURL!.deletingLastPathComponent().path
         print(folderPath)
         shootDataArray = realm.objects(ShootData.self)
-        
-        
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        dateFormatter.setLocalizedDateFormatFromTemplate("MMMMd")
         
         if shootDataArray.count != 0{
-//            print(shootDataArray[0].practiceDay)
-//            calcu()
-            let po = shootDataArray.sorted(byKeyPath: "practiceDay")
-            for i in 0...po.count - 1 {
-                print(po[i].practiceDay)
-            }
-//            shootPercent.text = "\(totalMake * 100 / totalTake)"
-
+            calcu()
         }else {
             startDay.text = "1/1"
             endDay.text = "1/1"
@@ -45,18 +38,13 @@ class HomeViewController: UIViewController{
     }
     
     func calcu(){
+        
+        let po = shootDataArray.sorted(byKeyPath: "practiceDay")
+        startDay.text = dateFormatter.string(from: po[0].practiceDay)
+        endDay.text = dateFormatter.string(from: po[po.count-1].practiceDay)
+        
 
         for i in 0...shootDataArray.count - 1{
-//            let monthDate:Int = shootDataArray[i].month * 100 + shootDataArray[i].day
-//
-//            if min >= monthDate && monthDate != 100{
-//                min = monthDate
-//            }
-//
-//            if max <= monthDate{
-//                max = monthDate
-//            }
-
             totalMake = totalMake + shootDataArray[i].make
             totalTake = totalTake + shootDataArray[i].take
         }
