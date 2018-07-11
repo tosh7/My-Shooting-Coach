@@ -43,10 +43,10 @@ class HomeViewController: UIViewController{
         startDay.text = dateFormatter.string(from: po[0].practiceDay)
         endDay.text = dateFormatter.string(from: po[po.count-1].practiceDay)
         
-
         for i in 0...shootDataArray.count - 1{
             totalMake = totalMake + shootDataArray[i].make
             totalTake = totalTake + shootDataArray[i].take
         }
+        shootPercent.text = String(totalMake * 100 / totalTake)
     }
 }
