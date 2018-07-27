@@ -59,15 +59,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="%です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-fV-CUH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-fV-CUH">
                                 <rect key="frame" x="215" y="448" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-XT-sSE">
-                                <rect key="frame" x="80" y="368" width="117" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="num" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-XT-sSE">
+                                <rect key="frame" x="110.5" y="368" width="86.5" height="117"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -82,8 +82,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jrE-Ue-akl" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="21R-f3-5z2"/>
-                            <constraint firstItem="ib9-9T-hh8" firstAttribute="top" secondItem="YzR-fV-CUH" secondAttribute="bottom" constant="1" id="4bh-GM-LUp"/>
                             <constraint firstItem="8kL-FY-7ca" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="123" id="BSD-Te-Vre"/>
+                            <constraint firstItem="Pbf-XT-sSE" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="110.5" id="BdF-xS-4nf"/>
                             <constraint firstAttribute="bottom" secondItem="jrE-Ue-akl" secondAttribute="bottom" id="ClQ-CS-bsX"/>
                             <constraint firstItem="jrE-Ue-akl" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="EMy-v3-YxV"/>
                             <constraint firstItem="jrE-Ue-akl" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="FnZ-85-oAB"/>

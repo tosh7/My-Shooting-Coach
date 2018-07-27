@@ -35,7 +35,7 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     }
     
     @objc func refresh(){
-        print(refresh)
+        print("refresh")
         koushin()
         table.dataSource = self
         shootDataArray = realm.objects(ShootData.self)
@@ -64,7 +64,7 @@ class StatsViewController: UIViewController, UITableViewDataSource {
     
     func koushin(){
         print(1)
-        table.dataSource = self
+//        table.dataSource = self
         shootDataArray = realm.objects(ShootData.self)
     }
     
